@@ -1,0 +1,48 @@
+# 1. Age Categorization
+def categorize_age(age):
+    if age < 13:
+        return "Child"
+    elif 13 <= age <= 19:
+        return "Teen"
+    elif 20 <= age <= 59:
+        return "Adult"
+    else:
+        return "Senior"
+
+age = int(input("Enter your age: "))
+print("Category:", categorize_age(age))
+
+
+# 2. Check if a number is Positive, Negative or Zero
+def check_number(n):
+    if n > 0:
+        return "Positive"
+    elif n < 0:
+        return "Negative"
+    else:
+        return "Zero"
+
+number = float(input("Enter a number: "))
+print("The number is:", check_number(number))
+
+
+# 3. List operations: First and Last items, then print all
+num_list = [10, 20, 30, 40, 50]
+print("First item:", num_list[0])
+print("Last item:", num_list[-1])
+print("All items in the list:")
+for num in num_list:
+    print(num)
+
+
+# 4. Create and Update a Dictionary
+person = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York"
+}
+print("Original dictionary:", person)
+
+# Update value
+person["age"] = 31
+print("Updated dictionary:", person)
